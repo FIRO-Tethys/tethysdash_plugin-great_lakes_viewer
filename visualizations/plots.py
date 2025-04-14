@@ -10,13 +10,7 @@ class Plots(base.DataSource):
     version = "0.0.1"
     name = "great_lakes_plots"
     visualization_args = {
-        "lake": [
-            {"value": "lake erie", "label": "Lake Erie"},
-            {"value": "lake ontario", "label": "Lake Ontario"},
-            {"value": "lake superior", "label": "Lake Superior"},
-            {"value": "lake michigan-huron", "label": "Lake Michigan-Huron"},
-            {"value": "lake st. clair", "label": "Lake St. Clair"}
-        ]
+        "lake": "text"
     }
     visualization_group = "Great Lakes Viewer"
     visualization_label = "Great Lakes Viewer Plots"
