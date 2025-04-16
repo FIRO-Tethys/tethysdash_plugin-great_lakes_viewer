@@ -24,7 +24,7 @@ class Plots(base.DataSource):
     def read(self):
         module_path = os.path.dirname(__file__)
         lake = self.lake.title()
-        file_path = f'{module_path}/data/{lake}.csv'
+        file_path = f'{module_path}/data/water levels/{lake}.csv'
         df = pd.read_csv(file_path)
 
         plot = go.Figure()
