@@ -1,0 +1,39 @@
+{
+    "version": 8,
+    "sources": {
+        "Great Lakes": {
+            "type": "geojson"
+        }
+    },
+    "layers": [
+        {
+            "id": "country-fill",
+            "type": "fill",
+            "source": "Great Lakes",
+            "paint": {
+                "fill-color": [
+                    "match",
+                    [
+                        "get",
+                        "COUNTRY"
+                    ],
+                    "CAN",
+                    "#D80621",
+                    "USA",
+                    "#0A3161",
+                    "#CCCCCC"
+                ],
+                "fill-opacity": 0.4
+            }
+        },
+        {
+            "id": "country-border",
+            "type": "line",
+            "source": "Great Lakes",
+            "paint": {
+                "line-color": "#808080",
+                "line-width": 1
+            }
+        }
+    ]
+}
