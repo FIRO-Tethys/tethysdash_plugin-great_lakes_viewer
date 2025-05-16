@@ -15,6 +15,7 @@ setup(
     entry_points={
         "intake.drivers": [
             "great_lakes_plots = visualizations.plots:Plots",
+            "usgs_map = visualizations.map:Map",
         ]
     },
     package_data={"": ["*.csv", "*.yml", "*.html"]},
