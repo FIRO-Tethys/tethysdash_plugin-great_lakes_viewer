@@ -7,6 +7,8 @@ class Map(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "great_lakes_map"
+    visualization_description = ("Map for Great Lakes")
+    visualization_tags = ["map", "great lakes"]
     visualization_args = {}
     visualization_group = "Great Lakes Viewer"
     visualization_label = "Great Lakes Viewer Map"

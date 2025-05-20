@@ -6,7 +6,7 @@ setup(
     name="tethysdash_plugin-great_lakes_viewer",
     version="0.0.1",
     description="Great Lakes visualization plugins for tethysdash",
-    url="https://github.com/FIRO-Tethys/tethysdash_plugin_geoglows",
+    url="https://github.com/FIRO-Tethys/tethysdash_plugin-great_lakes_viewer",
     maintainer="Yue Sun",
     maintainer_email="ysun@aquaveo.com",
     license="BSD",
@@ -14,8 +14,8 @@ setup(
     packages=find_packages(),
     entry_points={
         "intake.drivers": [
-            "great_lakes_plots = visualizations.plots:Plots",
-            "usgs_map = visualizations.map:Map",
+            "great_lakes_plots = great_lakes_visualizations.plots:Plots",
+            "great_lakes_map = great_lakes_visualizations.map:Map",
         ]
     },
     package_data={"": ["*.csv", "*.yml", "*.html"]},

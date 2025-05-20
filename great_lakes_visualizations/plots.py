@@ -9,6 +9,8 @@ class Plots(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "great_lakes_plots"
+    visualization_description = ("Plot monthly water level data for the selected lake")
+    visualization_tags = ["plot", "great lakes", "water level"]
     visualization_args = {
         "lake": "text"
     }
