@@ -13,6 +13,7 @@ class Map(base.DataSource):
     visualization_group = "Great Lakes Viewer"
     visualization_label = "Great Lakes Viewer Map"
     visualization_type = "map"
+    visualization_attribution = "USGS"
     _user_parameters = []
 
     def __init__(self, metadata=None, **kwargs):
@@ -21,16 +22,7 @@ class Map(base.DataSource):
     def read(self):
         module_path = os.path.dirname(__file__)
         file_path = f'{module_path}/data/geojson/map_layers.json'
-        layers_config = {}
+        map_config = {}
         with open(file_path) as file:
-            layers_config = json.load(file)
-        layers = layers_config['args_string']['layers']
-        return {
-            "baseMap": "https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer",
-            "layers": layers,
-            "layerControl": True,
-            "viewConfig": {
-                "center": [-9420639.46478766, 5668078.400971366],
-                "zoom": 6.168853136274057
-            },
-        }
+            map_config = json.load(file)
+        return map_config['args_string']
