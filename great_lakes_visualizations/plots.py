@@ -17,6 +17,7 @@ class Plots(base.DataSource):
     visualization_group = "Great Lakes Viewer"
     visualization_label = "Great Lakes Viewer Plots"
     visualization_type = "plotly"
+    visualization_attribution = "USACE"
     _user_parameters = []
 
     def __init__(self, lake, metadata=None):
