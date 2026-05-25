@@ -18,7 +18,12 @@ setup(
             "great_lakes_map = great_lakes_visualizations.map:Map",
         ]
     },
-    package_data={"": ["*.csv", "*.yml", "*.html", "*.png", "*.json"]},
+    package_data={
+        "great_lakes_visualizations": [
+            "static/*",
+            "data/**/*",
+        ]
+    },
     include_package_data=True,
     install_requires=INSTALL_REQUIRES,
     long_description=open("README.md").read(),

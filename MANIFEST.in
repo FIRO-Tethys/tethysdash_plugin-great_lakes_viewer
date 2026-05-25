@@ -1,0 +1,2 @@
+recursive-include great_lakes_visualizations/static *
+recursive-include great_lakes_visualizations/data *
